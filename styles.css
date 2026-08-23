@@ -39,3 +39,13 @@
 .avatar-cream {
   background: #ffe59a;
 }
+
+.personal-phrase {
+  max-width: 600px;
+  margin: -15px auto 30px;
+  color: #6c746f;
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.5;
+}
