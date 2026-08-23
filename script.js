@@ -21,6 +21,12 @@ const birthdays = [
 ];
 const fmt = new Intl.DateTimeFormat("es-AR", { day: "numeric", month: "long" });
 const now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+const startOfYear = new Date(now.getFullYear(), 0, 1);
+const dayOfYear = Math.floor((today - startOfYear) / 86400000);
+const dailyPhrase = dailyPhrases[dayOfYear % dailyPhrases.length];
+
+document.querySelector(".daily-phrase").textContent = dailyPhrase;
 function nextDate(b) { const d = new Date(now.getFullYear(), b.month - 1, b.day); return d < today ? new Date(now.getFullYear() + 1, b.month - 1, b.day) : d }
 function days(d) { return Math.round((d - today) / 86400000) }
 const ordered = birthdays.map(b => ({ ...b, next: nextDate(b) })).sort((a, b) => a.next - b.next);
