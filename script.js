@@ -42,3 +42,15 @@ document.querySelector(".list").innerHTML = ordered.map((b, i) => {
   <div class="person"><h3>${b.nickname}</h3><p>${fmt.format(b.next)}</p></div>
   <span class="days">${n === 0 ? "hoy" : n === 1 ? "1 día" : n + " días"}</span></article>`
 }).join("");
+const dailyPhrases = [
+  "Madurar es de frutas",
+  "Vamos todos colectivo",
+  "La banda que nunca abandona",
+  "Hola tano hola tano vine",
+  "Y bueno viejo, es asi la historia",
+  "El choripingazo",
+  "San Clementende",
+  "Trancu",
+  "Ranchando very nice",
+  "Miguel, gendarmeria!"
+];
