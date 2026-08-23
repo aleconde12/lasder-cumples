@@ -10,7 +10,7 @@ const birthdays = [
   { nickname: "Sola", month: 10, day: 11, color: "pink", phrase: "FRASE SOLA" },
   { nickname: "Sir", month: 10, day: 14, color: "blue", phrase: "Huevosss" },
   { nickname: "Gasty", month: 5, day: 13, color: "orange", phrase: "Tas volando" },
-  { nickname: "Maru", month: 11, day: 21, color: "lavender", phrase: "Gorda gorda pelotuda" },
+  { nickname: "Maru", month: 11, day: 24, color: "lavender", phrase: "Gorda gorda pelotuda" },
   { nickname: "Ori", month: 8, day: 18, color: "aqua", phrase: "FRASE ORI" },
   { nickname: "Pali", month: 6, day: 8, color: "peach", phrase: "Quiero pancho" },
   { nickname: "Jopo", month: 5, day: 11, color: "lime", phrase: "Madurar es de frutas" },
