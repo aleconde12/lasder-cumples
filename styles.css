@@ -49,3 +49,48 @@
   font-style: italic;
   line-height: 1.5;
 }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.install-button {
+  appearance: none;
+  padding: 8px 13px;
+  background: #dfff5f;
+  color: #17211c;
+  border: 1.5px solid #17211c;
+  border-radius: 999px;
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #17211c;
+}
+
+.install-button:hover {
+  transform: translateY(-1px);
+}
+
+.install-button[hidden] {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header-actions {
+    gap: 8px;
+  }
+
+  .install-button {
+    max-width: 100px;
+    padding: 7px 10px;
+    font-size: 0.62rem;
+  }
+
+  .year {
+    display: none;
+  }
+}

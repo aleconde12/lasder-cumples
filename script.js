@@ -28,7 +28,9 @@ const dailyPhrases = [
   "San Clementende",
   "Trancu",
   "Ranchando very nice",
-  "Miguel, gendarmeria!"
+  "Miguel, gendarmeria!",
+  "VIVO?!",
+  "Conozco a Brenda"
 ];
 
 const fmt = new Intl.DateTimeFormat("es-AR", { day: "numeric", month: "long" });
@@ -60,3 +62,61 @@ document.querySelector(".list").innerHTML = ordered.map((b, i) => {
   <div class="person"><h3>${b.nickname}</h3><p>${fmt.format(b.next)}</p></div>
   <span class="days">${n === 0 ? "hoy" : n === 1 ? "1 día" : n + " días"}</span></article>`
 }).join("");
+
+const installButton = document.querySelector(".install-button");
+
+let installPrompt = null;
+
+const isIos =
+  /iphone|ipad|ipod/i.test(navigator.userAgent);
+
+const isStandalone =
+  window.matchMedia("(display-mode: standalone)").matches ||
+  window.navigator.standalone === true;
+
+window.addEventListener("beforeinstallprompt", event => {
+  event.preventDefault();
+
+  installPrompt = event;
+
+  if (!isStandalone) {
+    installButton.hidden = false;
+  }
+});
+
+if (isIos && !isStandalone) {
+  installButton.hidden = false;
+}
+
+installButton.addEventListener("click", async () => {
+  if (isIos) {
+    alert(
+      "Para agregar Cumple Lasder: tocá Compartir y después “Agregar a pantalla de inicio”."
+    );
+
+    return;
+  }
+
+  if (!installPrompt) {
+    alert(
+      "Abrí el menú del navegador y elegí “Agregar a pantalla principal” o “Instalar aplicación”."
+    );
+
+    return;
+  }
+
+  await installPrompt.prompt();
+  installPrompt = null;
+  installButton.hidden = true;
+});
+
+window.addEventListener("appinstalled", () => {
+  installPrompt = null;
+  installButton.hidden = true;
+});
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js");
+  });
+}

@@ -3,18 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Los cumples de la banda, siempre a mano.">
-<meta property="og:title" content="Cumple Lasder">
-<meta property="og:description" content="Los cumples de la banda, siempre a mano.">
-<meta property="og:image" content="https://lasder.com.ar/og.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://lasder.com.ar/">
-<title>Cumple Lasder</title>
+  <meta name="description" content="Los cumples de la banda, siempre a mano.">
+  <meta property="og:title" content="Cumple Lasder">
+  <meta property="og:description" content="Los cumples de la banda, siempre a mano.">
+  <meta property="og:image" content="https://lasder.com.ar/og.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lasder.com.ar/">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Cumple Lasder">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <title>Cumple Lasder</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <main>
-  <header><a class="brand" href="#">lasder<span>.</span></a><span class="year"></span></header>
+<header>
+  <a class="brand" href="#">lasder<span>.</span></a>
+
+  <div class="header-actions">
+<button type="button" class="install-button" hidden>
+  Agregar al inicio
+</button>
+
+    <span class="year"></span>
+  </div>
+</header>
   <section class="hero">
     <i class="confetti one"></i><i class="confetti two"></i>
     <p class="eyebrow">Próximo cumpleaños</p>
