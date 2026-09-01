@@ -15,7 +15,8 @@ const birthdays = [
   { nickname: "Pali", month: 6, day: 8, color: "peach", phrase: "" },
   { nickname: "Jopo", month: 5, day: 11, color: "lime", phrase: "Madurar es de frutas" },
   { nickname: "Tano", month: 12, day: 27, color: "rose", phrase: "Porrco dio !" },
-  { nickname: "Javi", month: 4, day: 14, color: "aqua", phrase: "FRASE JAVI" },
+  { nickname: "Javi", month: 4, day: 14, color: "aqua", phrase: "" },
+  { nickname: "Lola", month: 9, day: 11, color: "lime", phrase: "" }
 ];
 
 const dailyPhrases = [
@@ -30,7 +31,10 @@ const dailyPhrases = [
   "Ranchando very nice",
   "Miguel, gendarmeria!",
   "VIVO?!",
-  "Conozco a Brenda"
+  "Conozco a Brenda",
+  "Porco dio me vuelvo loco",
+  "Calma calm cal SEEEE",
+  "Huevosss"
 ];
 
 const fmt = new Intl.DateTimeFormat("es-AR", { day: "numeric", month: "long" });
