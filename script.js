@@ -16,7 +16,11 @@ const birthdays = [
   { nickname: "Jopo", month: 5, day: 11, color: "lime", phrase: "Madurar es de frutas" },
   { nickname: "Tano", month: 12, day: 27, color: "rose", phrase: "Porrco dio !" },
   { nickname: "Javi", month: 4, day: 14, color: "aqua", phrase: "" },
-  { nickname: "Lola", month: 9, day: 11, color: "lime", phrase: "" }
+  { nickname: "Lola", month: 9, day: 11, color: "lime", phrase: "" },
+  { nickname: "Shaggy", month: 10, day: 30, color: "mint", phrase: "" },
+  { nickname: "Seba Villalba", month: 10, day: 15, color: "coral", phrase: "" },
+  { nickname: "Trini", month: 5, day: 29, color: "violet", phrase: "" },
+  { nickname: "Corne", month: 9, day: 4, color: "sun", phrase: "" },
 ];
 
 const dailyPhrases = [
