@@ -21,6 +21,8 @@ const birthdays = [
   { nickname: "Seba Villalba", month: 10, day: 15, color: "coral", phrase: "" },
   { nickname: "Trini", month: 5, day: 29, color: "violet", phrase: "" },
   { nickname: "Corne", month: 9, day: 4, color: "sun", phrase: "" },
+  { nickname: "Mike Wallet", month: 4, day: 28, color: "sky", phrase: "" },
+  { nickname: "Mati Panza", month: 1, day: 19, color: "aqua", phrase: "" }
 ];
 
 const dailyPhrases = [
